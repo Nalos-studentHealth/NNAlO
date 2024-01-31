@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>report</title>
+    <style>
+        body {
+          font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+       
+        .export-btn {
+            text-align: center;
+            margin: 20px auto;
+        }
+        .export-btn button {
+            padding: 10px 20px;
+            background-color: #15967d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        p{
+          font-size: large;
+          padding-left: 80px;
+          padding-top: 80px;
+
+        }
+       
+        .container {
+            width: 60%;
+            height: 200px;
+            border-collapse: collapse;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        li{
+            font-size: larger;
+        }
+       
+       
+        header {
+          background-color: #f0f0f0;
+            color: #495057;
+            text-align: center;
+            width: 100%;   }
+        span{
+            color: #15967d;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Promoting School Health Based On Artificial Intelligence<br></h1>
+    
+        </header>
+
+      <div class="container">
+    <ul>
+      <li>Total students: <span>132</span> students</li>
+      <li>Number of students with anemia:<span>64</span>  out of <span>132</span></li>
+      <li>Number of students Overweight: <span>67</span> out of <span>132</span></li>
+      <li>Number of students Underweight: <span>8</span> out of <span>132</span></li>
+      <li>Number of students whose academic achievement declined: <span>8</span> out of <span>132</span></li>
+  </ul>
+  
+</div>  
+    <div class="export-btn">
+        <button onclick="goToAnotherPage()">Reports</button>
+        <button onclick="goToAnotherPageee()">visualization</button>
+
+
+    </div>
+
+    
+    <script>
+        function goToAnotherPage() {
+            // Change the location to the URL of the other HTML page
+            window.location.href = 'reporsts/tables.html';
+        }
+    </script>
+    <script>
+      function goToAnotherPageee() {
+          // Change the location to the URL of the other HTML page
+          window.location.href = 'reporsts/charts.html';
+      }
+  </script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</body>
+</html>
